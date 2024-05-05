@@ -1,0 +1,109 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.wishlist_page_main {
+  padding: 0px 45px;
+}
+.wishlist_desktop {
+}
+.heading {
+  margin: auto;
+  padding: 50px 0;
+}
+.index_heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.wishlist_container {
+  display: flex;
+  flex-wrap: wrap;
+  bottom: 100px;
+  gap: 60px;
+}
+.item_card {
+  background-color: #fff;
+  padding: 0 0 14px;
+  box-sizing: border-box;
+  outline: 1px solid #e9e9eb;
+
+  height: 425px;
+  max-width: 220px;
+}
+.itemCard_img {
+}
+.itemCard_img img {
+  object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+  min-height: 294px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  opacity: 1;
+}
+.itemCard_action {
+  height: 127px;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+  background: #fff;
+}
+.itemCard_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 78px;
+  font-size: 14px;
+  text-align: left;
+  color: #696b79;
+  padding: 10px 10px 0;
+  border: none !important;
+  border-bottom: 1px solid #e9e9eb !important;
+}
+.itemDetail_label {
+  font-size: 16px;
+  color: #282c3f;
+  text-align: left;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+.item_pricing {
+  font-size: 14px;
+  text-align: center;
+}
+.actual_price {
+  font-weight: 700;
+  padding: 0 3px 0 0;
+  font-size: 16px;
+  color: #282c3f;
+}
+.original_price {
+  text-decoration: line-through;
+  opacity: 0.7;
+  font-size: 12px;
+  padding: 0 3px;
+  color: #282c3f;
+}
+.discount_percentage {
+  color: #ff905a;
+  padding: 0 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.itemCard_action_container {
+  text-align: center;
+}
+.itemCard_action_container button {
+  background-color: white;
+  height: 35px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+  color: #ff3e6c;
+}

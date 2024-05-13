@@ -78,6 +78,23 @@ header {
   align-items: center;
   flex-direction: column;
 }
+.action_bar_icon_container {
+  position: relative;
+}
+.action_bar_icon_container .item_count {
+  background-color: #f16565;
+  height: 16px;
+  width: 16px;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  font-size: 12px;
+  left: 17px;
+  top: -5px;
+}
+
 /* main section*/
 .banner_container {
   margin: 40px 0;
@@ -114,6 +131,44 @@ header {
   height: 280px;
   object-fit: cover;
 }
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 340px;
+  position: relative;
+  border: 6px solid #e71398;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.category .item_image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 9px 9px 0px 0px;
+}
+.category_details {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.category_title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0752e8;
+}
+.category_offer {
+  font-weight: 700;
+  color: #070fce;
+  font-size: 22px;
+}
+.shop_now {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0752e8;
+}
 .product_details {
   padding: 0 10px;
   margin-top: 12px;
@@ -130,6 +185,9 @@ header {
 .product_desc {
   font-size: 14px;
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .product_price {
   margin: 10px 0 6px;
@@ -174,6 +232,7 @@ header {
 .sale_item .item_details_on_hover button {
   height: 34px;
 }
+
 .Wishlist_button {
   display: flex;
   justify-content: center;
@@ -182,6 +241,7 @@ header {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
+  cursor: pointer;
 }
 .product_sizes {
   font-size: 14px;

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Myntra</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -44,18 +44,26 @@
       </a>
       <a href="pages/wishlist.html">
         <div class="action_container">
-          <span class="material-symbols-outlined">
+          <div class="action_bar_icon_container">
+          <span class="material-symbols-outlined ">
             favorite
             </span>
+            <span id="wishlistItem_count" class="item_count">0</span>
+          </div>
           <span class="action_name">Wishlist</span>
+          
         </div>
       </a>
         <a href="pages/bag.html">
         <div class="action_container">
-          <span class="material-symbols-outlined">
+          <div class="action_bar_icon_container">
+          <span class="material-symbols-outlined action_bar_icon">
             local_mall
             </span>
+            <span id="bagItem_count" class="item_count">0</span>
+          </div>
           <span class="action_name">Bag</span>
+          
         </div>
       </a>
       </div>
@@ -64,9 +72,9 @@
       <div class="banner_container">
         <img class="banner_image" src="https://www.dealsshutter.com/blog/wp-content/uploads/2021/11/dealshutter-myntra-featured-image.jpg" alt="banner image">
       </div>
-      <div class="category_heading">Trending Womens Clothing</div>
-      <div class="category_items">
-        <div class="sale_item">
+      <div  class="category_heading">Trending Womens Clothing</div>
+      <div id="trendingWomensClothing" class="category_items">
+        <!-- <div class="sale_item">
           <a href="">
             <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/17577112/2022/4/1/038b2635-cdea-45e1-9e61-d378af341b781648811848984-Sangria-Women-Lavender-Georgette-A-Line-Maxi-Dress-126164881-1.jpg" alt="">
           </a>
@@ -336,10 +344,11 @@
             </button>
             <h4 class="product_sizes"> Sizes</h4>
           </div>
-        </div>
+        </div> -->
       </div>
+      
       <div class="category_heading">Trending Mens Clothing</div>
-      <div class="category_items">
+      <div id="trendingMensClothing" class="category_items">
         <div class="sale_item">
           <a href="">
             <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg" alt="">
@@ -612,85 +621,105 @@
         </div>
       </div>
       <div class="category_heading">Shop By Category</div>
-      <div class="category_items">
-        <div class="sale_item">
+      <div id="shopByCategory" class="category_items">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/27956764/2024/2/29/0a4aebfb-b9ae-4457-8213-f4706e8372ff1709208091059WomensFuchsiaTie-DyePrintedTieredEthnicDress5.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Women's Ethnic wear</div>
+            <div class="category_offer">50-80% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
-        <div class="sale_item">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/8717979/2019/3/20/585db9fe-1df0-458d-b218-6f514eabb9601553068826233-Mast--Harbour-Men-Shirts-4141553068825026-1.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9104965/2019/5/14/8fbe8b93-aef5-439d-a2c8-d14067a09bdd1557818654206-House-of-Pataudi-Men-Maroon-Embroidered-Straight-Kurta-77015-1.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Men's Ethnic wear</div>
+            <div class="category_offer">Flat 50% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
-        <div class="sale_item">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11780934/2020/4/3/1ed79c22-68b5-491a-b673-e91e4411d8aa1585905063620HIGHLANDERMenOliveGreenBlackSlimFitCheckedCasualShirt1.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Men's Casual wear</div>
+            <div class="category_offer">50-60% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
-        <div class="sale_item">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/20929962/2022/11/25/a41e5e8e-771d-478f-be41-393fee1260951669379533264Sherwani1.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23049382/2023/5/6/37a83438-3c50-4f82-a7f2-f46f4dc0577e1683355458417CRTeamsMensTrainingPants11.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Men's Active wear</div>
+            <div class="category_offer">60-70% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
-        <div class="sale_item">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23066632/2023/5/8/2307e840-32b0-461c-b603-0fc95aa2e3ec1683527586479KisahMensGreyKurtaSherwaniChuridarSet1.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19062898/2022/7/12/0a5f3a96-e22e-41a3-ab03-919c1eff6b4c1657572757566Dresses1.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Women's Western wear</div>
+            <div class="category_offer">60-80% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
-        <div class="sale_item">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/20654690/2022/12/3/a22f6f73-d889-47b3-866a-c4ba868d658e1670042727742-Louis-Philippe-Men-Suits-5181670042727125-1.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/25880068/2023/11/15/3e0c14e9-caf9-4a4c-80f2-82db323c2a861700026396497TheUltimateLeggings-Lite4.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Women's Sportswear</div>
+            <div class="category_offer">40-55% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
-        <div class="sale_item">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/17094604/2022/5/6/1382e6de-9bb5-401b-a2cc-a67eeb33bf4c1651828652325HouseofPataudiWomenGreenFloralEmbroideredThreadWorkRozanaKur5.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/24877016/2023/9/10/42099204-a9c8-456e-b52f-799dce1c0f351694287212504DukieKookyUnisexKidsBlackLensPinkWayfarerSunglasseswithUVPro1.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Eyewear</div>
+            <div class="category_offer">50-70% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
-        <div class="sale_item">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11780968/2022/11/21/57eb174b-cbf1-4d1e-906c-dd87fcfb059d1669021381999-HIGHLANDER-Men-Green--White-Slim-Fit-Printed-Casual-Shirt-27-1.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/13036796/2021/1/6/bb6d18c9-39c1-4632-bc4a-f452606965ef1609906124788-WROGN-Men-Silver-Toned-Analogue-Watch-WRG00048A-802160990612-1.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Watches</div>
+            <div class="category_offer">50-80% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
-        <div class="sale_item">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/20388072/2024/4/10/763da514-0d1f-412d-af6c-ab1c3ed055961712742925019-The-Souled-Store-Men-Blue--Green-Printed-Cotton-Oversized-T--11.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/25702712/2023/11/20/c23efe6b-7bfb-435c-9acd-e79d290a0a231700460248711-THE-MAN-COMPANY-Set-Of-8-Grooming-Kit-8481700460248431-2.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Grooming</div>
+            <div class="category_offer">50-60% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
-        <div class="sale_item">
+        <div class="category">
           <a href="">
-            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18106016/2022/4/30/c0776d01-6821-418d-bbf8-7ce3420b043b1651323685311TheSouledStoreMenWhiteFloralPrintedCasualShirt1.jpg" alt="">
+            <img class="item_image" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/22526488/2023/4/12/3880ffb6-e982-460c-ac7b-2ed953df81e01681278624626-BarryM-Women-Beauty-Gift-Set-3681681278624139-1.jpg" alt="">
           </a>
-          <div>
-            price $100
+          <div class="category_details">
+            <div class="category_title">Beauty & Makeup</div>
+            <div class="category_offer">60-80% OFF</div>
+            <div class="shop_now">Shop Now</div>
           </div>
         </div>
       </div>
@@ -742,5 +771,7 @@
         © 2024 www.myntra.com. All rights reserved.
       </div>
     </footer>
+    <script src="data/productData.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

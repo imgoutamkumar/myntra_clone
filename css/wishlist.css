@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* header section*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid rgb(203, 202, 202);
+}
+.myntra_home {
+  width: 53px;
+}
+.logo_container {
+  margin-left: 4%;
+}
+.action_bar {
+  margin-left: 4%;
+}
+.nav_bar {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 500px;
+}
+.nav_bar a {
+  font-size: 14px;
+  color: black;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 28px 0;
+  border-bottom: 5px solid white;
+}
+.nav_bar a:hover {
+  border-bottom: 4px solid rgb(246, 28, 170);
+}
+.nav_bar a sup {
+  color: red;
+  font-size: 10px;
+}
+.search_bar {
+  height: 40px;
+  min-width: 300px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.search_icon {
+  box-sizing: content-box;
+  height: 20px;
+  padding: 10px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 4px 0 0 4px;
+}
+.search_input {
+  flex-grow: 1;
+  height: 40px;
+  background-color: rgb(231, 231, 231);
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+.action_bar {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 200px;
+  font-size: 14px;
+}
+.action_bar a {
+  text-decoration: none;
+}
+.action_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.action_bar_icon_container {
+  position: relative;
+}
+.action_bar_icon_container .item_count {
+  background-color: #f16565;
+  height: 16px;
+  width: 16px;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  font-size: 12px;
+  left: 17px;
+  top: -5px;
+}
+/* main section*/
+.wishlist_page_main {
+  padding: 0px 45px;
+}
+.wishlist_desktop {
+}
+.heading {
+  margin: auto;
+  padding: 50px 0;
+}
+.index_heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.wishlist_container {
+  display: flex;
+  flex-wrap: wrap;
+  bottom: 100px;
+  gap: 60px;
+}
+.item_card {
+  background-color: #fff;
+  padding: 0 0 14px;
+  box-sizing: border-box;
+  outline: 1px solid #e9e9eb;
+
+  height: 425px;
+  max-width: 220px;
+}
+.itemCard_img {
+  position: relative;
+}
+.itemCard_img img {
+  object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+  min-height: 294px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  opacity: 1;
+}
+.itemCard_img .close_icon {
+  position: absolute;
+  position: absolute;
+  top: 10px;
+  right: 11px;
+  background-color: #ffffffc2;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px -2px #2d2d2d;
+  visibility: hidden;
+  cursor: pointer;
+}
+.itemCard_img:hover .close_icon {
+  visibility: visible;
+}
+.itemCard_action {
+  height: 127px;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+  background: #fff;
+}
+.itemCard_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 78px;
+  font-size: 14px;
+  text-align: left;
+  color: #696b79;
+  padding: 10px 10px 0;
+  border: none !important;
+  border-bottom: 1px solid #e9e9eb !important;
+}
+.itemDetail_label {
+  font-size: 16px;
+  color: #282c3f;
+  text-align: left;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+.item_pricing {
+  font-size: 14px;
+  text-align: center;
+}
+.actual_price {
+  font-weight: 700;
+  padding: 0 3px 0 0;
+  font-size: 16px;
+  color: #282c3f;
+}
+.original_price {
+  text-decoration: line-through;
+  opacity: 0.7;
+  font-size: 12px;
+  padding: 0 3px;
+  color: #282c3f;
+}
+.discount_percentage {
+  color: #ff905a;
+  padding: 0 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.itemCard_action_container {
+  text-align: center;
+}
+.itemCard_action_container button {
+  background-color: white;
+  height: 48px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+  color: #ff3e6c;
+}

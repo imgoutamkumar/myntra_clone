@@ -33,7 +33,7 @@ function showBagItems() {
   bagProducts.forEach((product) => {
     return (bagtItems += `<div class="item_container">
       <div class="item_left">
-        <a href="">
+        <a href="../pages/productDetails.html?id=${product.id}">
           <img
             src="${product.images[0]}"
             alt="cart item image"

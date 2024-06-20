@@ -35,10 +35,12 @@ function showWishlistAddedItems() {
   wishListedProduct.forEach((product) => {
     return (wishlistItems += `<div class="item_card">
     <div class="itemCard_img">
+    <a href="../pages/productDetails.html?id=${product.id}">
       <img
         src="${product.images[0]}"
         alt=""
       />
+      </a>
       <div class="close_icon" onclick="removeWishlistedItem(${product.id})">
                   <span class="material-symbols-outlined">
                     close

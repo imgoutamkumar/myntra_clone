@@ -140,6 +140,7 @@
 .size_chart {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: 30px;
   border: 0;
   letter-spacing: 0.5px;
@@ -189,6 +190,13 @@
   border: 1px solid #ff3e6c;
   background-color: #ff3e6c;
   color: #fff;
+  transition: transform 0 2s ease;
+}
+.addToBag :active {
+  transform: scale(0.96);
+}
+.addToBag:hover {
+  background-color: #f71a4d;
 }
 .wishlist {
   display: flex;
@@ -204,4 +212,11 @@
   min-height: 22px;
   background-color: #fff;
   cursor: pointer;
+  transition: transform 0 2s ease;
+}
+.wishlist:active {
+  transform: scale(0.96);
+}
+.wishlist:hover {
+  border: 1px solid #ff3e6c;
 }
